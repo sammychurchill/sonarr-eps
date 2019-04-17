@@ -1,9 +1,9 @@
 import 'semantic-ui-css/semantic.min.css'
+import 'react-toastify/dist/ReactToastify.css';
 import React, { useState } from 'react';
 import { Menu, Container } from 'semantic-ui-react'
+import { ToastContainer, toast } from 'react-toastify';
 import Head from 'next/head'
-
-// function handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
 const Layout = (props) => {
 	const [activeItem, setActive] = useState('seasons')
@@ -39,7 +39,8 @@ const Layout = (props) => {
 				<div className="content has-text-centered">
 					<span>I'm the footer</span>
 				</div>
-				</footer>
+			</footer>
+			<ToastContainer />
 		</div>
 )}
 
